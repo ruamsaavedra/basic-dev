@@ -11,7 +11,8 @@ body{
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 100vh;    
+    height: 100vh;
+    background: linear-gradient(to left, rgb(57, 14, 92), rgb(26, 9, 43));    
 }
 
 .stopwatch-body{
@@ -21,9 +22,10 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    border-radius: 5px;
-    min-height: 50vh;
-    min-width: 50%;
+    border-radius: 20px;
+    min-height: 40vh;
+    width: 400px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
 }
 
 .stopwatch-screen{
@@ -39,6 +41,8 @@ body{
 .stopwatch-btn{
     min-width: 90%;
     min-height: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 .stp-btn{
     border: none;
@@ -48,13 +52,16 @@ body{
     font-size: 1.3rem;
     width: 30%;
     height: 80px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
-
+.stp-btn:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
+}
 .stp-btn:nth-child(1){
     background: linear-gradient(45deg, limegreen, green);
 }
 .stp-btn:nth-child(1):hover{
-    background: linear-gradient(to bottom, limegreen, green);
+    background: radial-gradient( limegreen, green);
 }
 .stp-btn:nth-child(1):active{
     background: rgb(13, 240, 13);
@@ -63,8 +70,11 @@ body{
     background: linear-gradient(45deg,rgb(209, 209, 1),orange);
 }
 .stp-btn:nth-child(2):hover{
-    background: linear-gradient(to bottom,rgb(239, 253, 41),rgb(180, 117, 1));
+    background: radial-gradient(rgb(239, 253, 41),rgb(180, 117, 1));
 
+}
+.stp-btn:nth-child(2):active{
+    background: yellow;
 }
 .stp-btn:nth-child(3){
     background: linear-gradient(45deg, rgb(245, 36, 4), rgb(151, 8, 37));
@@ -72,4 +82,7 @@ body{
 .stp-btn:nth-child(3):hover{
     background: linear-gradient(to bottom, orange, red);
 
+}
+.stp-btn:nth-child(3):active{
+    background: red;
 }
