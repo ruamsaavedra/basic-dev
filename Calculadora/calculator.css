@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+body{
+    display: flex;
+    margin: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.calculator-body{
+    display: flex;
+    flex-direction: column;
+}
+.screen{
+    background: gray;
+}
+.operators{
+    display: flex;
+}
+.calculator-numbers{
+    display:flex;
+}
+.btn{
+    border:solid black;
+}
