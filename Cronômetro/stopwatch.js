@@ -9,9 +9,13 @@ let sec = parseInt(hsec)
 let hmilisec = document.querySelector('.stopwatch-milisec').innerHTML
 let milisec = parseInt(hmilisec)
 
-var interval = null
+let interval = null
+
+
 
 function startCount(){
+    if (interval == null){
+    
     interval = setInterval(function(){        
         document.querySelector('.stopwatch-milisec').innerHTML=`${milisec}`
         cont = 0
@@ -47,8 +51,10 @@ function startCount(){
         }
     },10)
 }
+}
 function pauseCount(){
     clearInterval(interval)
+    interval = null
 }
 function resetCount(){
     document.querySelector('.stopwatch-min').innerHTML=`00`
