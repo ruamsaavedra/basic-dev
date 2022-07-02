@@ -9,36 +9,37 @@
 </head>
 <body>
     <div class="calculator-body">
-        <div class="screen"><h1>tela</h1></div>
+        <div id="screen"><h1></h1></div>
         <div class="operators">
-            <div class="operators btn">+</div>
-            <div class="operators btn">-</div>
-            <div class="operators btn">X</div>
-            <div class="operators btn">/</div>
+            <div class="operators btn" onclick="addition()">+</div>
+            <div class="operators btn" onclick="subtraction()">-</div>
+            <div class="operators btn" onclick="multiplication()">X</div>
+            <div class="operators btn" onclick="division()">/</div>
         </div>
         <div class="calculator-numbers">
             <div class="numbers-group">
-                <div class="group-a btn">7</div>
-                <div class="group-a btn">4</div>
-                <div class="group-a btn">1</div>
-                <div class="group-a btn">0</div>
+                <div class="group-a btn" onclick="number('7')">7</div>
+                <div class="group-a btn" onclick="number('4')">4</div>
+                <div class="group-a btn" onclick="number('1')">1</div>
+                <div class="group-a btn" onclick="number('0')">0</div>
             </div>
             <div class="numbers-group">
-                <div class="group-b btn">8</div>
-                <div class="group-b btn">5</div>
-                <div class="group-b btn">2</div>
-                <div class="group-b btn">,</div>
+                <div class="group-b btn" onclick="number('8')">8</div>
+                <div class="group-b btn" onclick="number('5')">5</div>
+                <div class="group-b btn" onclick="number('2')">2</div>
+                <div class="group-b btn" onclick="number('.')">,</div>
             </div>
             <div class="numbers-group">
-                <div class="group-c btn">9</div>
-                <div class="group-c btn">6</div>
-                <div class="group-c btn">3</div>
-                <div class="group-c btn">C</div>
+                <div class="group-c btn" onclick="number('9')">9</div>
+                <div class="group-c btn" onclick="number('6')">6</div>
+                <div class="group-c btn" onclick="number('3')">3</div>
+                <div class="group-c btn" onclick="clearScreen()">C</div>
             </div>
             <div class="numbers-group">
-                <div class="group-d">=</div>
+                <div class="group-d" onclick="result()">=</div>
             </div>
         </div>
     </div>
+    <script src="calculator.js"></script>
 </body>
 </html>
